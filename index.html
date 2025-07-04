@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>USO DE SLIDES ETIQUETAS SEMANTICAS</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">
+	<link rel="stylesheet" type="text/css" href="css/themes.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+</head>
+<body>
+	<header>
+		<img src="img/descarga.jpg">
+		<h1>la empresa agripac</h1>
+	</header>
+	<nav>
+		<ul>
+			<li>inicio</li>
+			<li>servicio</li>
+			<li>contacto</li>
+			<li>registrarse</li>
+		</ul>
+	  </nav>
+      <main>
+      	 <script> 
+      	 	$(function () {
+
+            // Slideshow 1
+            $("#slider1").responsiveSlides({
+            auto: false,
+            pager: true,
+            nav: true,
+            speed: 500,
+            maxwidth: 800,
+            namespace: "centered-btns"
+            });
+            });
+            
+
+	        </script>       
+
+	  <div id="wrapper">
+                    <div class="rslides_container">
+	<ul class="rslides" id="slider1">
+					<li><img src="img/descarga1.jpg"   alt=""></li>
+					<li><img src="img/descarga2.jpg" alt=""></li>
+					<li><img src="img/descarga.jpg" alt=""></li>
+				   </ul>
+			</div>
+			</div>
+           </main>
+	      
+</body>
+</html>

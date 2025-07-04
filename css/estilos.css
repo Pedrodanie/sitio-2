@@ -1,0 +1,11 @@
+body{
+	background: conic-gradient(yellow,orange,white,pink,green);
+}
+
+nav ul{
+	list-style-type: none ;
+	width: 800px;
+	text-align: center;
+
+
+}
