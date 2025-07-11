@@ -3,54 +3,85 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>USO DE SLIDES ETIQUETAS SEMANTICAS</title>
+	<title>USO DE SLLIDES Y ETIQUETAS SEMANTICAS</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/responsiveslides.css">
 	<link rel="stylesheet" type="text/css" href="css/themes.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<script src="js/responsiveslides.min.js"></script>
+
 </head>
 <body>
 	<header>
 		<img src="img/descarga.jpg">
-		<h1>la empresa agripac</h1>
+		<h1>EMPRESA AGRIPAC</h1>
 	</header>
 	<nav>
 		<ul>
-			<li>inicio</li>
-			<li>servicio</li>
-			<li>contacto</li>
-			<li>registrarse</li>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="servicio.html">SERVICIO</a></li>
+			<li><a href="contacto.html">CONTACTO</a></li>
+			<li><a href="registrarse.html">REGISTRARSE</a></li>
 		</ul>
-	  </nav>
-      <main>
-      	 <script> 
-      	 	$(function () {
+	</nav>
+	
+	<main>
+	<div id="wrapper">
+			<div class="rslides_container">
+    <ul class="rslides" id="slider1">
+      <li><img src="img/images.jpg" width="150px" height="150pxalt="></li>
+      <li><img src="img/soto.jpg" alt=""></li>
+      <li><img src="img/perro.jpg" alt=""></li>
+    </ul>
+    </div>
+    </div>
+	<article>
+	<img src="img/descarga4.jpg" width="150px" height="150px">	
+	  	</article>
+	<article>
+	<img src="img/descarga5.jpg"width="150px" height="150px">
+	</article>
+	<article>
+	<img src="img/descarga6.jpg"width="150px" height="150px">
+	</article>
+	</main>
+	<footer>
+  <footer style="background:  #283747 ; color: #00ffff; padding: 30px 20px; text-align: center; font-family: 'Orbitron', sans-serif; box-shadow: 0 -2px 20px #00ffff; border-top: 2px solid #00ffff;">
+  
+  <h2 style="margin-bottom: 10px; color: #00eaff; text-shadow: 0 0 10px #00eaff;">⚡ ZONA DE CONTACTO ⚡</h2>
+  
+  <p style="margin: 6px 0; font-size: 16px;">📍  Guayaquil - Ecuador</p>
+  <p style="margin: 6px 0; font-size: 16px;">📞 +593 123 456 789</p>
+  <p style="margin: 6px 0; font-size: 16px;">✉️ banchonpedro1@gmail.com</p>
 
-            // Slideshow 1
-            $("#slider1").responsiveSlides({
-            auto: false,
-            pager: true,
-            nav: true,
-            speed: 500,
-            maxwidth: 800,
-            namespace: "centered-btns"
-            });
-            });
-            
+  <div style="margin-top: 20px;">
+    <a href="https://www.facebook.com/Agripac/?locale=es_LA" target="_blank" style="margin: 0 12px;">
+      <img src="https://cdn-icons-png.flaticon.com/32/733/733547.png" alt="Facebook" width="32" style="filter: drop-shadow(0 0 4px #00eaff);">
+    </a>
+    <a href="https://www.instagram.com/agripacsa/?hl=es" target="_blank" style="margin: 0 12px;">
+      <img src="https://cdn-icons-png.flaticon.com/32/733/733558.png" alt="Instagram" width="32" style="filter: drop-shadow(0 0 4px #ff00c3);">
+    </a>
+    <a href="https://www.instagram.com/agripacsa/?hl=es" target="_blank" style="margin: 0 12px;">
+      <img src="img/tikitiki.png" alt="Tik tok" width="32" style="filter: drop-shadow(0 0 4px #00ff98);">
+    </a>
+  </div>
 
-	        </script>       
+  <p style="margin-top: 25px; font-size: 13px; color: #888;">&copy; 2025 FuturoNet™ | Todos los derechos reservados 🚀</p>
+</footer>
+		</footer>
+	<script>
+		$(function () {
 
-	  <div id="wrapper">
-                    <div class="rslides_container">
-	<ul class="rslides" id="slider1">
-					<li><img src="img/descarga1.jpg"   alt=""></li>
-					<li><img src="img/descarga2.jpg" alt=""></li>
-					<li><img src="img/descarga.jpg" alt=""></li>
-				   </ul>
-			</div>
-			</div>
-           </main>
-	      
+			//Slidesshow 1
+			$("#slider1").responsiveSlides({
+				auto: false,
+				pager: true,
+				nav: true,
+				speed: 500,
+				maxwidth: 900,
+				namespace: "centered-btns"
+			});
+		  });
+		</script>
 </body>
 </html>

@@ -1,11 +1,71 @@
 body{
-	background: conic-gradient(yellow,orange,white,pink,green);
+	background: conic-gradient(goldenrod,green,#F5CBA7,lightskyblue);
 }
 
-nav ul{
-	list-style-type: none ;
-	width: 800px;
-	text-align: center;
+nav{
+    width: 100%;
+    hight: 50px;
+    background: #bo3a2e;
+    margin: auto;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+	position: relative;
+}
+
+nav ul li a{
+	display: block;
+	padding: 15px 20px;
+	color: #FAFA34;
+	left: 0;
+	background: #4434EB;
+	padding: 0;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	background: #BAB555;
+}
+
+nav ul li ul{
+	display:none;
+	position: absolute;
+	top:100%;
+	list-style-type: none;
+}
+nav ul li ul li a{
+	padding: 10px 20px;
+}
+nav ul li ul li a:hover{
+	background: #E33232;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+article{
+	width: 33%;
+	float: left;
+	margin: auto;
+}
+#formulario{
+	text-align: left;
+}
+fieldset{
+	padding: 25px;
+	width: 400px;
+	border: 2px dashed blue;
+	
 
 
+}
+.etiqueta{
+	width: 120px;
+	float: left;
 }
