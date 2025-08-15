@@ -21,7 +21,19 @@
 			<li><a href="registrarse.html">REGISTRARSE</a></li>
 		</ul>
 	</nav>
-
+	<?php
+    //Configurar requisitos de conexion
+$host="localhost";//Servidor
+$user="root";//Usuario
+$password="";
+$database="db_usuarios..";
+//crear la conexion
+$conexion=new mysqli($host,$user,....);
+//verificar la conexion
+if($conexion->conect_error){
+ die("Error en la conexion".$conexion->conect_error....);
+}
+    ?>
 	<form id="Formulario"action="" method="POST">
 		<fieldset>
 			<legend>Datos de usuario</legend>
@@ -81,3 +93,4 @@
 		</footer>
 </body>
 </html>
+
