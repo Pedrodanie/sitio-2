@@ -31,14 +31,15 @@ $database="db_usuarios..";
 $conexion=new mysqli($host,$user,$password,$database);
 //verificar la conexion
 if($conexion->conect_error){
- die("Error en la conexion".$conexion->conect_error....);
+ die("Error en la conexion".$conexion->conect_error);
 }
 	//obtener los datos del formulario
 	$cedula=$_POST["txtcedula"];
-$nombre=$_POST["txtnombre"];
-$apellido=$_POST["txtapellido"];
-$usuario=$_POST["txtususario"];
-$password=$_POST["txtpassword"];
+    $nombre=$_POST["txtnombre"];
+    $apellido=$_POST["txtapellido"];
+    $usuario=$_POST["txtususario"];
+    $password=$_POST["txtpassword"];
+//preparar la consulta e insertar los registros
     
     ?>
 	<form id="Formulario"action="" method="POST">
@@ -100,5 +101,6 @@ $password=$_POST["txtpassword"];
 		</footer>
 </body>
 </html>
+
 
 
