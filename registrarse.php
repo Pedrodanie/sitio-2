@@ -40,6 +40,17 @@ if($conexion->conect_error){
     $usuario=$_POST["txtususario"];
     $password=$_POST["txtpassword"];
 //preparar la consulta e insertar los registros
+    $consulta=$conexion->prepare["Insert into"Tb_USUARIOS"(CEDULA,NOMBRE,APELLIDO,USUARIO,COMTRASEÑA,)$values(?,?,?,?,?)");
+	$consulta->bind_param("sssss",$cedula,$nombre, $apellido,$usuario,$password);
+	//ejecutar la conexion 
+		if($consultar->execute()){
+			echo"datos guardados correctamente";
+		}
+		else{
+			echo "Error:".$consulta->error;
+		}
+	
+	
     
     ?>
 	<form id="Formulario"action="" method="POST">
@@ -101,6 +112,7 @@ if($conexion->conect_error){
 		</footer>
 </body>
 </html>
+
 
 
 
