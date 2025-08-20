@@ -44,7 +44,7 @@ if($conexion->conect_error){
 	$consulta->bind_param("sssss",$cedula,$nombre, $apellido,$usuario,$password);
 	//ejecutar la conexion 
 		if($consultar->execute()){
-			echo"datos guardados correctamente";
+			echo "Datos guardados correctamente";
 		}
 		else{
 			echo "Error:".$consulta->error;
@@ -112,6 +112,7 @@ if($conexion->conect_error){
 		</footer>
 </body>
 </html>
+
 
 
 
